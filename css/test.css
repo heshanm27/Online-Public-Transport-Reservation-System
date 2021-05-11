@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background:#f6f5f7;
+    height: 100vh;
+    font-family: 'B612', sans-serif;
+  }
+  
+ 
+  #content {
+    max-width: 1000px;
+    height: 800px;
+    background: white;
+    position: relative;
+    margin: 0 auto;
+    top:5%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:0 2px 2px rgba(0, 0, 0, 0.2),0 5px 5px rgba(0, 0,0, 0.2) ;
+    z-index: 3;
+    
+  }
+
+
+
+  #rightBox{
+    width: 100%;
+    height: 500px;
+    float: right;
+    position: relative;
+    z-index: 2;
+     margin-left:40% ;
+  }
+  
+  #rightBox::after{
+
+    content: "";
+    background-image: url();
+    background-size: cover;
+    background-repeat:no-repeat ;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    bottom: 0px;
+    left: 0%;
+    z-index: -2;
+    opacity: 0.5;
+    clear: both;
+   }
+
+  
+  
+  h1 {
+    position: relative;
+    color: #1b1b1b;  
+    font-size: 50px;
+    top: 0%;
+    left: 0px;
+    line-height: 0.9;
+    
+    
+  }
+
+
+  
+  #txtSign{
+    
+    color: #111111af;  
+    font-size: 20px;
+    line-height: 0.9;
+    top: 0px;
+    left: 20px;
+    margin:10px ;
+    text-align: center;
+  }
+  .input{
+
+    padding: 10px;
+  }
+  .input input{
+
+    background: #eee;
+    border: none;
+    border-bottom: 2px solid silver;
+    padding: 12px 15px;
+    margin: 10px 0;
+    margin-left:100px ;
+    width: 80%;
+    height: 30px;
+    border-radius:5px ;
+    border-color: silver;
+  }
+  input:focus{
+    outline: none;
+}
+  input:valid:focus{
+    border-color: chartreuse;
+  }
+  input:invalid:focus{
+    border-color: red;
+  }
+  
+ 
+  form{
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+   
+  }
+  select{
+
+    background: #eee;
+    border: none;
+    color: rgb(73, 73, 73);
+    margin-left:100px ;
+    width: 80%;
+    height: 30px;
+    border-radius:5px ;
+    margin-top:10px ;
+    margin-bottom: 10px;
+  }
+  #btnSign{
+    
+    margin: 0;
+    display: flex;
+    display: table-column;
+    margin-left: 30%;
+    margin-top: 30px;
+    left: 500px;
+    width: 200px;
+    border-radius: 20px;
+    border:1px solid #ff4b2b;
+    background: #ff4b2b;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: transfrom 80ms ease-in-out;
+    margin-bottom:10px; 
+  }
+  #btnSign:hover{
+
+    background-color: rgb(52, 170, 154);
+    border:1px solid rgb(52, 170, 154);
+    color: #000;
+  }
+  button:active{
+
+      transform: scale(0.80);
+
+  }
+  button:focus{
+
+    outline: none;
+  }
+  label{
+
+    margin: 2px;
+    padding-left: 5px;
+    font-size: 15px;
+    margin-left:100px ;
+    width: 80%;
+  }
+  #checkBox{
+
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  padding: 10px;
+  }
+
+  #showPass{
+
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  #btnLogin{
+
+    border-radius: 20px;
+    border:1px solid #ffffff;
+    background: #ffffff;
+    color: rgb(75, 143, 182);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    text-transform: uppercase;
+    transition: transfrom 80ms ease-in-out;
+    display: flex;
+    position: absolute;
+    top:130%;
+    left: 30%;
+  }
+
+  #btnLogin:hover{
+    border:1px solid #ff4b2b;
+    background: #ff4b2b;
+    color: white;
+  }
+  #error{
+
+    position:absolute;
+    margin-top:20px ;
+    top: 125%;
+    left:30%;
+    color: red;
+    font-size: 10px;
+    opacity: 1;
+   animation: anime 10s ;
+
+  }
+
+  @keyframes anime{
+
+    from {opacity: 1;}
+    50%{opacity: 0.8;}
+    to {opacity: 0;}
+  }
+#left{
+
+  float: left;
+  
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  left: -50%;
+  top:30%;
+}
+
+#fileToUpload{
+
+  background: none;
+    border: none;
+    border-bottom: 0;
+    padding: 0;
+    margin:  0;
+    margin-left:100px ;
+    width: 10;
+    height: 10;
+    border-radius:5px ;
+    top:250px;
+    position: relative;
+    right: 50px;
+    border-radius: 20px;
+    
+}
+
+
+#upload{
+  position: relative;
+  top:240px;
+  right: 10%;
+  color: white;
+  background-color:#ff8c00;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 10px;
+}
+#uimg{
+  
+  padding: 30px;
+  border-radius: 50%;
+
+  width:50px;
+  height:50px;
+  position: relative;
+}
+#up{
+
+  width:250px;
+  height:250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
