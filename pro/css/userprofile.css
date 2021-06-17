@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+#logo{
+
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    left: 25%;
+    top:20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 10px rgba(0,0,0,0.25);
+    margin: 0 auto; 
+}
+
+#userlogo{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    top:20px;
+    padding: 25;
+}
+
+#detailstabel{
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top:0;
+    
+    left: -25%;
+    line-height: 14px;
+
+}
+
+table{
+
+  border-collapse: collapse;
+
+}
+
+.title{
+
+  color: darkorange;
+  font-size: 20px;
+
+
+} 
+.title:before {
+  content:"• ";
+}
+tr td{
+
+  border-bottom: 2px solid darkorange;
+  height: 20px;
+}
+#tabel{
+
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top:250px;
+    right: 100px;
+    
+    
+
+}
+h2{
+
+    color: darkorange;
+    font-family: 'B612', sans-serif;
+}
+
+#sidemenulogo {
+
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    top:20px;
+    
+}
+
+
+/*side menu*/
+
+.sidenav {
+
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    
+    top: 0;
+    left: -100px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s ease-out;
+    padding-top: 60px;
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: darkorange;
+    display: block;
+    transition: 0.3s;
+    animation-direction: reverse;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: relative;
+    top: -50px;
+    
+    font-size: 36px;
+    margin-left: 140px;
+  }
+  
+  
+  @media screen and (max-height: 150px) {
+    .sidenav {padding-left: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  /*#side{
+    position: relative;
+    right: -800px;
+    float:left;
+  }*/

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../BUS registration/1001425283.jpg");
+	/*background-position:center;*/
+	background-size:cover;
+	background-color:#f6f5f7;
+    height: 100vh;
+    font-family: 'B612', sans-serif;
+}
+
+h2{
+		
+	color:darkorange;
+
+}
+
+input[type=text]{
+	height:30px;
+	margin-left:30px;
+	border:none;
+	border-bottom:3px solid darkorange;
+	padding:10px;
+	
+}
+
+input[type=text]:focus{
+	outline:none;
+}
+
+input[type="radio"] {
+	opacity: 0; 
+	position: absolute;
+}
+
+
+label{
+
+  display: inline-flex;
+}
+.p{
+  display: inline-flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: darkorange;
+}
+
+input[type="radio"] + img {
+
+	transition: all 0.2s;
+}
+
+input + img {
+	cursor: pointer;
+}
+
+input[class="bad"]:hover + #emoji1,
+input[class="bad"]:checked +#emoji1,
+input[class="bad"]:focus + #emoji1 {
+  filter: invert(21%) sepia(98%) saturate(6779%) hue-rotate(359deg) brightness(101%) contrast(109%);
+}
+
+
+input[class="nbad"]:hover + #emoji2,
+input[class="nbad"]:checked + #emoji2,
+input[class="nbad"]:focus + #emoji2 {
+	filter: invert(86%) sepia(34%) saturate(3480%) hue-rotate(15deg) brightness(104%) contrast(116%);
+}
+
+
+input[class="good"]:hover + #emoji3,
+input[class="good"]:checked + #emoji3,
+input[class="good"]:focus + #emoji3 {
+	filter: invert(66%) sepia(87%) saturate(3234%) hue-rotate(359deg) brightness(100%) contrast(107%);
+  
+}
+
+input[class="verygood"]:hover + #emoji4,
+input[class="verygood"]:checked + #emoji4,
+input[class="verygood"]:focus + #emoji4 {
+  filter: invert(56%) sepia(27%) saturate(7329%) hue-rotate(85deg) brightness(125%) contrast(121%);
+  
+}
+
+input[class="Excellent"]:hover + #emoji5,
+input[class="Excellent"]:checked + #emoji5,
+input[class="Excellent"]:focus + #emoji5 {
+  filter: invert(79%) sepia(4%) saturate(2471%) hue-rotate(304deg) brightness(101%) contrast(108%);
+  
+}
+/*llll*/
+table{
+	
+	Margin-left:500px;
+	Margin-right:auto;
+	Margin-top:70px;
+	Margin-bottom:auto;
+		
+}
+
+td{
+	height:40px;
+	
+	
+}
+
+textarea{
+		
+	width:400px;
+	height:150px;
+	resize:none;
+	font-size:16px;
+	background-color:#ffffff;
+	border:none;
+	border:3px solid darkorange;
+	
+	
+}
+
+textarea:focus{
+	outline:3px solid darkorange;
+	
+	
+}
+
+#content {
+    max-width: 1000px;
+    height: 1000px;
+    background: white;
+    position: relative;
+    margin: 0 auto;
+    top:5%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:0 2px 2px rgba(0, 0, 0, 0.2),0 5px 5px rgba(0, 0,0, 0.2) ;
+    z-index: 1;
+	
+    
+}
+
+#rightBox::after{
+
+    content: "";
+    display:block;
+    background-image: url("../img/feedback.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+    width:75%;
+    height: 100%;
+    position: absolute;
+    top: -100px;
+    right: 550px;
+    bottom: -100px;
+    
+    opacity: 0.9;
+    margin: auto;
+    z-index: -1;
+}
+
+
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.1s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  position:relative;
+  margin-top:15px;
+  
+  
+  
+  
+}
+
+.button:hover {opacity: 1}

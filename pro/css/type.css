@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background:#f6f5f7;
+    height: 100vh;
+    font-family: 'B612', sans-serif;
+  }
+  
+ 
+  #content {
+    max-width: 500px;
+    height: 600px;
+    background: white;
+    position: relative;
+    margin: 0 auto;
+    top:5%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:0 2px 2px rgba(0, 0, 0, 0.2),0 5px 5px rgba(0, 0,0, 0.2) ;
+    z-index: 3;
+    color: darkorange;
+    text-align: center;
+  }
+
+  #content::after{
+
+    content: "";
+    display:block;
+    background-image: url(../img/Background/searchbg.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+  
+    bottom: 0px;
+    top: 200px;
+    opacity: 0.9;
+    margin: auto;
+    z-index: -1;
+    
+   }
+
+#button{
+
+    position: relative;
+    top: 5%;
+}
+.as{
+
+    margin: 50px;
+}
+
+
+
+.btn{
+    width: 200px;
+    height: 40px;
+  
+    border-radius: 20px;
+    border:1px solid #ff4b2b;
+    background: #ff4b2b;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 4px;
+    text-transform: uppercase;
+    transition: transfrom 80ms ease-in-out;
+    display: flex;
+    position: relative;
+   
+    display: flex;
+    display: table-column;
+    transform: scale(1);
+  }
+  a{
+      text-decoration: none;
+  }
+  
+  .btn:hover{
+    border:1px solid #ff4b2b;
+    background: #ffffff;
+    color: darkorange;
+    transform: scale(1.2);
+  }
+  
+

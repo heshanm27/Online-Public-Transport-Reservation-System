@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+#content {
+    max-width: 700px;
+    height: 310px;
+    background: white;
+    position: relative;
+    margin: 10% auto;
+    
+    top:30%;
+   
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0,0, 0.22) ;
+    font-family: 'B612', sans-serif;
+    
+  }
+
+  p{
+
+    font-size: 25px;
+    margin: 50px 20px;
+color: darkorange;
+text-align: center;
+  }
+
+
+  button{
+    width: 200px;
+    height: 40px;
+  
+    border-radius: 20px;
+    border:1px solid #ff4b2b;
+    background: #ff4b2b;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 4px;
+    text-transform: uppercase;
+    transition: transfrom 80ms ease-in-out;
+    display: flex;
+    position: relative;
+    top:10%;
+    left: 40px;
+    display: flex;
+      display: table-column;
+  }
+  
+  button:hover{
+    border:1px solid #ff4b2b;
+    background: #ffffff;
+    color: darkorange;
+  }
+  a{
+      text-decoration: none;
+  }
